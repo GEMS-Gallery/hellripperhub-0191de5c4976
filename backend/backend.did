@@ -1,0 +1,12 @@
+service : {
+  getCharacters: () -> (vec text) query;
+  getGameInfo: () -> (text) query;
+  getLevelVotes: () -> (vec record {
+                              text;
+                              nat;
+                            }) query;
+  getLevels: () -> (vec text) query;
+  getWeapons: () -> (vec text) query;
+  init: () -> ();
+  voteForLevel: (nat) -> ();
+}
